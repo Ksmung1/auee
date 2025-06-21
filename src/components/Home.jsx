@@ -38,9 +38,17 @@ const Home = () => {
       >
         Your browser does not support the audio element.
       </audio>
+            <audio
+        ref={audioRef}
+        controls
+        className="mt-4 w-full max-w-md"
+        src="/auee2.mp3"
+        type="audio/mpeg"
+      >
+        Your browser does not support the audio element.
+      </audio>
+      
 
-      <h1 className="text-sm font-bold">Today i got a prize</h1>
-      <img src="image.png" alt="" />
 
       {isPlaying && (
         <div className="mt-4">
